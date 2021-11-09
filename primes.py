@@ -46,13 +46,3 @@ def _prime_recursive(n, prime_check = 2, prime_numbers = []):
    
     prime_check += 1
     return _prime_recursive(n, prime_check, prime_numbers)
-
-
-prime_1 = prime_linear(100)
-print('linear: ', prime_1)
-
-
-prime_2 = prime_recursive(100)
-print('recursivo: ', prime_2)
-
-
