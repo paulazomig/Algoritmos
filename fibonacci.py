@@ -33,6 +33,9 @@ def _fibonacci_recursive(n, counter = 2, fibonacci = (0,1)):
     new_value = fibonacci[0] + fibonacci[1]
     new_fibonacci = (fibonacci[1], new_value)
 
+    if n < 2:
+        return fibonacci[n]    
+
     if n == (counter):
         return new_fibonacci[1]
     
